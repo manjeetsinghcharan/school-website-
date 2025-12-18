@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Position in CSS</title>
+    <style>
+      .rect {
+        width: 500px;
+        height: 200px;
+        background-color: red;
+        margin: 300px auto;
+        position: relative;
+      }
+
+      .circle {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        background-color: green;
+        border-radius: 50%;
+        bottom: -50px;
+        left: 50px;
+      }
+
+      .content {
+        font-size: 24px;
+        max-width: 500px;
+        margin: 0 auto;
+      }
+
+      .fixed {
+        height: 250px;
+        background-color: orange;
+        position: fixed;
+        bottom: 50px;
+        right: 30px;
+        width: 500px;
+      }
+
+      .sticky {
+        height: 50px;
+        background-color: aqua;
+        position: sticky;
+        top: 0px;
+      }
+
+      .block {
+        max-width: 300px;
+        position: relative;
+
+        img {
+          width: 100%;
+        }
+
+        .overlay {
+          position: absolute;
+          background-color: #000;
+          color: white;
+          bottom: 15px;
+          left: 15px;
+          right: 15px;
+          padding: 10px;
+          text-align: center;
+          font-size: 20px;
+        }
+
+        &:hover {
+          .overlay {
+            top: 15px;
+          }
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="rect">
+      <div class="circle"></div>
+    </div>
+
+    <div class="fixed"></div>
+
+    <div class="sticky"></div>
+
+    <div class="content">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat sint
+      deserunt aliquam, rem corporis impedit adipisci repellendus eaque nostrum
+      incidunt at, ea inventore quod debitis saepe, vel commodi consectetur.
+      Deleniti, quidem corporis nisi nobis quibusdam nemo cumque? Autem animi
+      alias, cum assumenda pariatur magnam facilis quod ipsam vel, eligendi
+      dignissimos architecto! Eligendi quae cupiditate dolorem ut quod, facere
+      obcaecati nobis nostrum voluptate nulla sunt mollitia consectetur? Nihil
+      molestias sit sint perspiciatis iusto vel aspernatur! Illo deserunt
+      inventore dolorem debitis quae repellendus laboriosam laborum eum voluptas
+      alias temporibus quos non iusto expedita ut, ad ea assumenda, molestias
+      sunt ex corporis. Excepturi fuga, architecto placeat deleniti pariatur
+      porro odit facilis iure corrupti modi ab. Provident ipsa aperiam quis
+      voluptatibus fuga, porro nisi delectus quibusdam suscipit deserunt
+      tenetur, voluptates sit possimus! Eligendi in distinctio dicta illo
+      facilis voluptas inventore, aliquid libero quaerat adipisci itaque quis
+      delectus. Sequi tempora voluptas itaque quas? Odit fugiat distinctio
+      voluptatum sequi dolor quidem ullam, voluptate quibusdam! Omnis libero
+      atque, itaque assumenda necessitatibus id at non error, repudiandae, quo
+      culpa. Reiciendis atque voluptate deleniti, odio a aspernatur architecto,
+      ipsam repudiandae magnam placeat unde. Minus harum provident quasi, dolor
+      laborum minima omnis culpa facere ad obcaecati nihil. Maxime totam
+      doloremque, ipsa minus saepe voluptatum facere harum necessitatibus, ea
+      vel quo hic, tempore vero voluptate optio libero veniam quibusdam
+      adipisci! Suscipit id aliquid laboriosam, dignissimos sit repudiandae enim
+      alias natus itaque nemo consectetur saepe aliquam tenetur atque aspernatur
+      fuga? Ab aspernatur libero optio natus, ea quas earum tempore et officiis
+      modi labore aliquid fugit fugiat cum. Quas velit natus itaque quae veniam
+      quasi perferendis rem ut provident vero fugiat, earum similique architecto
+      quibusdam tenetur veritatis nesciunt assumenda suscipit cumque vel modi
+      odit quisquam dolorem. Fuga minima inventore fugit delectus dignissimos
+      quidem aliquid dolores? Asperiores, ipsum! Vel aperiam, dolorum in ratione
+      veniam architecto at consequatur laudantium eveniet cumque eligendi esse
+      quae, sunt id corporis et aspernatur assumenda, tempore quos maiores
+      officia dolores fugiat? Ipsam sequi eveniet perferendis tempore quidem
+      labore est quisquam molestiae soluta totam debitis ratione reprehenderit
+      at ad, voluptate sapiente, maiores reiciendis fugit. At blanditiis labore,
+      odio eum quo officia ad. Non culpa voluptatum dolorem molestiae soluta,
+      dolores accusamus, quis fuga veritatis eligendi iure in quam voluptates
+      ab. Asperiores facere nulla veritatis quam, rerum natus accusamus alias
+      quod fugiat consequuntur iste ratione fugit nihil quis excepturi
+      necessitatibus dicta. Quas eum laboriosam autem. Perferendis aut quod,
+      explicabo at, molestias ut voluptates temporibus, libero iusto dolor
+      dolores minima. Obcaecati dolorem recusandae neque quibusdam, eveniet
+      laboriosam culpa fugiat? Atque excepturi vel, quam cumque, magnam
+      accusamus molestias incidunt quis nemo ullam laudantium eos beatae labore
+      maxime similique omnis officiis modi aspernatur perspiciatis eligendi,
+      obcaecati quibusdam. Earum quae maxime dolore. Vitae nesciunt temporibus
+      vero magni! Commodi blanditiis, facere non totam et aliquid ipsam
+      dignissimos esse, tempora sit iste. Iure perferendis nostrum quibusdam
+      dolore corrupti, magni magnam eaque iusto, maxime accusantium saepe
+      aspernatur. Officia ab adipisci magni quam corrupti laboriosam fuga
+      debitis reiciendis vero, cum placeat accusantium a sit dignissimos
+      voluptas cupiditate atque modi dolores praesentium?
+    </div>
+
+    <div class="block">
+      <img src="images/gallery/1.jpeg" alt="" />
+      <div class="overlay">Rainy Season</div>
+    </div>
+  </body>
+</html>
